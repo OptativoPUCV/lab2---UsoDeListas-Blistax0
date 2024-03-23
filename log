@@ -1,0 +1,10 @@
+Sat 23 Mar 2024 11:54:45 PM UTC: 
+ exercises.c | 28 +++++++++++++++++++++++++++-
+ 1 file changed, 27 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:91:18: error: expected expression before ‘List’
+   91 |       popCurrent(List *L);
+      |                  ^~~~
+Compilation failed
+da37d34
