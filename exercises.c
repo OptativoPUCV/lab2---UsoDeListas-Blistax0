@@ -3,6 +3,7 @@
 #include <string.h>
 #include <math.h>
 #include <ctype.h>
+#include <stdbool.h>
 #include "arraylist.h"
 #include "stack.h"
 
@@ -105,9 +106,11 @@ void copia_pila(Stack* P1, Stack* P2) {
   Stack* stackAux = create_stack();
   void *dato;
 
-  while((dato = pop(P1)) != NULL){
+  while(true){
     pushBack(P2, dato);
     pushBack(stackAux, dato);
+      if (P1 == NULL)
+        break;
   }
 }
 
